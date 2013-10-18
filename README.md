@@ -9,9 +9,10 @@ This is the Task Management application for Gracepoint Church.
 ################################################################################
 # Collaborators
 ################################################################################
-Albert Luo: PLEASE LEAVE YOUR LOGIN INFORMATION
-Brian Tan: PLEASE LEAVE YOUR LOGIN INFORMATION
-Bryan Mau: PLEASE LEAVE YOUR LOGIN INFORMATION
-Jonathan Eng: PLEASE LEAVE YOUR LOGIN INFORMATION
-Lemuel Daniel Wu: cs169-ak
-Steven Hong: PLEASE LEAVE YOUR LOGIN INFORMATION
+
+Albert Luo : LOGIN
+Brian Tan: LOGIN
+Bryan Mau: LOGIN
+Daniel Wu: cs169-ak
+Jonathan Eng: LOGIN
+Steven Hong: LOGIN
