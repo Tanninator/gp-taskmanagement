@@ -1,7 +1,7 @@
 ################################################################################
 # README for GP Task Management App
 ################################################################################
-This is the Task Management application for Gracepoint Church. 
+This is the Task Management application for Gracepoint Church.
 
 "Whatever you do, work heartily, as for the Lord and not for men"
     - Colossians 3:23
