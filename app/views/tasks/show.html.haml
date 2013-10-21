@@ -1,2 +1,18 @@
-%h1 Tasks#show
-%p Find me in app/views/tasks/show.html.haml
+%p#notice= notice
+
+%p
+  %b Title:
+  = @task.title
+%p
+  %b Progress:
+  = @task.progress
+%p
+  %b People:
+  = @task.people
+%p
+  %b Notes:
+  = @task.notes
+
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path
