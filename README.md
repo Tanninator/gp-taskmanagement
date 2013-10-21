@@ -14,5 +14,5 @@ Collaborators
 + Brian Tan: LOGIN
 + Bryan Mau: LOGIN
 + Daniel Wu: cs169-ak
-+ Jonathan Eng: LOGIN
++ Jonathan Eng: cs169-af
 + Steven Hong: LOGIN
