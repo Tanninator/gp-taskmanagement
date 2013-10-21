@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Used for haml
+gem 'haml-rails'
+
 # Generate cucumber tests
 group :test do
   gem 'cucumber-rails', :require => false
