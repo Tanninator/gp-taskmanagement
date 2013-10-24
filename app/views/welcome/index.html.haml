@@ -14,12 +14,6 @@
     %link{href: "http://www.immaus.com/xmlrpc.php?rsd", rel: "EditURI", title: "RSD", type: "application/rsd+xml"}/
     %link{href: "http://www.immaus.com/wp-includes/wlwmanifest.xml", rel: "wlwmanifest", type: "application/wlwmanifest+xml"}/
     %meta{content: "WordPress 3.6.1", name: "generator"}/
-    / Open Graph Tags
-    %meta{content: "Jonathan Eng's Site", property: "og:site_name"}/
-    %meta{content: "website", property: "og:type"}/
-    %meta{content: "Untitled", property: "og:description"}/
-    %meta{content: "http://www.immaus.com", property: "og:url"}/
-    / End Open Graph Tags
 
   %body.home.blog.skin-default.webkit.sidebar-none.list-post
     #pagewrap
@@ -29,19 +23,17 @@
             %h1#site-logo
               %a{href: "http://www.immaus.com"} Gracepoint Task Management
             %h2#site-description Task Management solutions for every occasion
-            .social-widget
-              .rss
-                %a{href: "http://www.immaus.com/feed/"} RSS
-            / /.social-widget
-            %form#searchform{action: "http://www.immaus.com/", method: "get"}
+
+            -# Doesn't do anything right now. Just a search box to be pretty
+            %form#searchform
               %input#s{name: "s", placeholder: "Search", type: "text"}/
           #nav-bar.clearfix
             %nav
               #menu-icon.mobile-button
-                %span Menu
+                %span News
               %ul#main-nav.main-nav.clearfix.pagewidth
                 %li.page_item.page-item-2
-                  %a{href: "http://www.immaus.com/sample-page/"} Announcements
+                  = link_to 'Tasks', 
               / /#main-nav
         / /#header
       / /#headerwrap
