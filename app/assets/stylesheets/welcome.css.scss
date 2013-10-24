@@ -1,3 +1,72 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ html { 
+  background: url(s3-blue.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+    font-family: "Yanone Kaffeesatz";
+    src: url("YanoneKaffeesatz-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nixie One";
+    src: url("NixieOne-Regular.ttf");
+}
+
+.site-title {
+	padding-top: 100px;
+}
+
+.md-font-style {
+	font-family: "Nixie One";
+	color: #FEE;
+}
+
+.description {
+	font-size: 30px;	
+	color: #FE6;
+}
+
+.launch-tasks {
+	font-size: 45px;	
+	color: #FF0;
+}
+
+.md-wrap {
+	position: relative; 
+	height: 100%; 
+	width: 100%; 
+	z-index: 9999;
+
+	a:link {color:#aefeff;}      /* unvisited link */
+	a:visited {color:#00FF00;}  /* visited link */
+	a:hover {color:#3ef7f9;}  /* mouse over link */
+	a:active {color:#0000FF;}  /* selected link */
+
+	a:link {text-decoration:none;}
+	a:visited {text-decoration:none;}
+	a:hover {text-decoration:none;}
+	a:active {text-decoration:none;}
+} 
+
+
+.md-sections {
+	width: 100%; 
+	height: 100%; 
+	text-align: center;
+}    
+
+.md-title {	
+	font-size: 70px; 
+	line-height: 120%;	
+	margin: 1em 0 0; 
+	width: 100%; 
+	transition: all 0.5s ease-out 0s;
+}            
+

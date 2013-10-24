@@ -1,110 +1,14 @@
 !!!
-%html{lang: "en-US"}
+%html
   %head
-    %meta{charset: "UTF-8"}/
-    %title Gracepoint Task Management
-    / %link#themify-shortcodes-css{href: "http://www.immaus.com/wp-content/themes/parallax/themify/css/shortcodes.css?ver=1.5.9", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link#theme-style-css{href: "http://www.immaus.com/wp-content/themes/parallax/style.css?ver=1.2.6", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link#themify-media-queries-css{href: "http://www.immaus.com/wp-content/themes/parallax/media-queries.css?ver=3.6.1", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link#google-fonts-css{href: "http://fonts.googleapis.com/css?family=Crete+Round%7CVidaloka%7CAlice&ver=3.6.1", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link#pretty-photo-css{href: "http://www.immaus.com/wp-content/themes/parallax/themify/css/lightbox.css?ver=3.6.1", media: "all", rel: "stylesheet", type: "text/css"}/
-    %link#themify-builder-style-css{href: "http://www.immaus.com/wp-content/themes/parallax/themify/themify-builder/css/themify-builder-style.css?ver=1.5.9", media: "all", rel: "stylesheet", type: "text/css"}/
-    %script{src: "http://www.immaus.com/wp-includes/js/jquery/jquery.js?ver=1.10.2", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1", type: "text/javascript"}
-    %link{href: "http://www.immaus.com/xmlrpc.php?rsd", rel: "EditURI", title: "RSD", type: "application/rsd+xml"}/
-    %link{href: "http://www.immaus.com/wp-includes/wlwmanifest.xml", rel: "wlwmanifest", type: "application/wlwmanifest+xml"}/
-    %meta{content: "WordPress 3.6.1", name: "generator"}/
-
-  %body.home.blog.skin-default.webkit.sidebar-none.list-post
-    #pagewrap
-      #headerwrap.fullcover{"data-bg" => "http://themify.me/demo/themes/wp-content/uploads/2013/05/header.jpg"}
-        %header#header.pagewidth
-          %hgroup
-            %h1#site-logo
-              %a{href: "http://www.immaus.com"} Gracepoint Task Management
-            %h2#site-description Task Management solutions for every occasion
-
-            -# Doesn't do anything right now. Just a search box to be pretty
-            %form#searchform
-              %input#s{name: "s", placeholder: "Search", type: "text"}/
-          #nav-bar.clearfix
-            %nav
-              #menu-icon.mobile-button
-                %span News
-              %ul#main-nav.main-nav.clearfix.pagewidth
-                %li.page_item.page-item-2
-                  = link_to 'Tasks', 
-              / /#main-nav
-        / /#header
-      / /#headerwrap
-      #body.clearfix
-        / layout
-        #layout.clearfix.pagewidth
-          / content
-          #content.clearfix
-            / loops-wrapper
-            #loops-wrapper.loops-wrapper
-              %article#post-1.post-1.post.type-post.status-publish.format-standard.hentry.category-uncategorized.post.clearfix.cat-1
-                .post-content
-                  %h2.post-title
-                    %a{href: "http://www.immaus.com/hello-world/", title: "Hello world!"} Sample Landing Site Under Construction
-                  %p.post-meta
-                    %span.post-author
-                      %a{href: "http://www.immaus.com/author/admin/", rel: "author", title: "Posts by admin"} admin
-                    %span.separator /
-                    %span.post-category
-                      %a{href: "http://www.immaus.com/category/uncategorized/", rel: "tag"} Uncategorized
-                    %span.separator /
-                    %span.post-comment
-                      %a{href: "http://www.immaus.com/hello-world/#comments", title: "Comment on Hello world!"} 1 comment
-                  %time.post-date{datetime: "2013-09-11", pubdate: ""} Sep 11, 2013
-                  %p Test post
-                  %p Another post
-                  #themify_builder_content-1.themify_builder_content.themify_builder.themify_builder_front{"data-postid" => "1"}
-                  / /themify_builder_content
-                / /.post-content
-              / /.post
-            / /loops-wrapper
-          / /#content
-        / /#layout
-      / /body
-      #footerwrap
-        %footer#footer.pagewidth
-          .footer-widgets.clearfix
-            .col3-1.first
-            .col3-1
-            .col3-1
-          / /.footer-widgets
-          %p.back-top
-            %a{href: "#header"} Back to top
-          .footer-text.clearfix
-            .one Gracepoint CS169 Team 20 | 2013
-          / /footer-text
-        / /#footer
-      / /#footerwrap
-    / /#pagewrap
-    / wp_footer
-    %script{src: "http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201342", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/isotope.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/infinitescroll.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/backstretch.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/skrollr.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/jquery.parallax.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/themify/js/carousel.min.js?ver=1.5.9", type: "text/javascript"}
-    :javascript
-      /* <![CDATA[ */
-      var themifyScript = {"lightbox":{"lightboxSelector":".lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":".post-content a[href$=jpg],.page-content a[href$=jpg],.post-content a[href$=gif],.page-content a[href$=gif],.post-content a[href$=png],.page-content a[href$=png],.post-content a[href$=JPG],.page-content a[href$=JPG],.post-content a[href$=GIF],.page-content a[href$=GIF],.post-content a[href$=PNG],.page-content a[href$=PNG],.post-content a[href$=jpeg],.page-content a[href$=jpeg],.post-content a[href$=JPEG],.page-content a[href$=JPEG]","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":".post, .type-page, .type-highlight, .type-slider","gallerySelector":".gallery-icon > a[href$=jpg],.gallery-icon > a[href$=gif],.gallery-icon > a[href$=png],.gallery-icon > a[href$=JPG],.gallery-icon > a[href$=GIF],.gallery-icon > a[href$=PNG],.gallery-icon > a[href$=jpeg],.gallery-icon > a[href$=JPEG]","lightboxGalleryOn":true},"lightboxContext":"#pagewrap","loadingImg":"http:\/\/www.immaus.com\/wp-content\/themes\/parallax\/images\/loading.gif","maxPages":"1","autoInfinite":"auto","fixedHeader":"1","ajaxurl":"http:\/\/www.immaus.com\/wp-admin\/admin-ajax.php","load_nonce":"cd884e748d","transitionSetup":[{"selector":".grid4:not(.query-section) .post:not(.section-post):nth-of-type(4n+1),.grid3:not(.query-section) .post:not(.section-post):nth-of-type(3n+1),.grid2:not(.query-section) .post:not(.section-post):nth-of-type(2n+1),.grid2-thumb:not(.query-section) .post:not(.section-post):nth-of-type(2n+1),.list-post:not(.query-section) .post:not(.section-post):nth-of-type(2n+1),.col2-1.first,.col3-2.first,.col3-1.first,.col4-3.first,.col4-2.first,.col4-1.first","value":{"data-center-top":"left[sqrt]:0px;top[sqrt]:0px;opacity:1;","data-bottom-top":"left[sqrt]: -400px;top[sqrt]:200px;opacity: 0;"}},{"selector":".grid4:not(.query-section) .post:not(.section-post):nth-of-type(4n+4),.grid3:not(.query-section) .post:not(.section-post):nth-of-type(3n+3),.grid2:not(.query-section) .post:not(.section-post):nth-of-type(2n+2),.grid2-thumb:not(.query-section) .post:not(.section-post):nth-of-type(2n+2),.list-post:not(.query-section) .post:not(.section-post):nth-of-type(2n+2),.col2-1.last,.col3-2.last,.col3-1.last,.col4-3.last,.col4-2.last,.col4-1.last","value":{"data-center-top":"right[sqrt]:0px;top[sqrt]:0px;opacity: 1;","data-bottom-top":"right[sqrt]:-400px;top[sqrt]:200px;opacity:0;"}},{"selector":".grid4:not(.query-section) .post:not(.section-post):nth-of-type(4n+2),.col4-1.second","value":{"data-center-top":"left[sqrt]:0px;top[sqrt]:0px;opacity: 1;","data-bottom-top":"left[sqrt]:-200px;top[sqrt]:200px;opacity:0;"}},{"selector":".grid4:not(.query-section) .post:not(.section-post):nth-of-type(4n+3),.col4-1.third","value":{"data-center-top":"right[sqrt]:0px;top[sqrt]:0px;opacity: 1;","data-bottom-top":"right[sqrt]:-200px;top[sqrt]:200px;opacity:0;"}},{"selector":".grid3:not(.query-section) .post:not(.section-post):nth-of-type(3n+2),.col3-1.second,.col4-2.second","value":{"data-center-top":"top[sqrt]:0px;opacity: 1;","data-bottom-top":"top[sqrt]:200px;opacity: 0;"}},{"selector":".section-post .button","value":{"data-bottom-top":"opacity:0;","data-center-top":"opacity:1;"}}],"scrollingEffect":"enabled","scrollingEffectType":"effect2"};
-      /* ]]> */
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/themify.script.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/themify/js/themify.gallery.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/themify/js/lightbox.js?ver=3.6.1", type: "text/javascript"}
-    :javascript
-      /* <![CDATA[ */
-      var themifyVars = {"play":"yes","autoplay":"5","speed":"500"};
-      /* ]]> */
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/js/themify.gallery.js?ver=3.6.1", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/themify/themify-builder/js/themify.builder.module.plugins.js?ver=1.5.9", type: "text/javascript"}
-    %script{src: "http://www.immaus.com/wp-content/themes/parallax/themify/themify-builder/js/themify.builder.script.js?ver=1.5.9", type: "text/javascript"}
-    /[if lt IE 9]
-      <script type="text/javascript" src="http://www.immaus.com/wp-content/themes/parallax/js/skrollr.ie.js">
-      </script>
+    %title lol
+    - content_for?(:title) ? yield(:title) : "default title"
+  %body
+    .md-wrap 
+      .md-sections.md-font-style
+        %h1.site-title.md-title
+          Gracepoint Task Management
+        %p.description
+          short description here
+        .launch-tasks
+          =link_to "Launch Tasks", tasks_path
