@@ -11,7 +11,6 @@ module NavigationHelpers
   # step definition in web_steps.rb
   #
   def path_to(page_name)
-    return
     case page_name
 
     when /^the (Tasks )?home\s?page$/ then '/tasks'

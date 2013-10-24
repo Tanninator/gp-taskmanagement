@@ -2,8 +2,8 @@
 
 Given /the following tasks exist/ do |tasks_table|
   tasks_table.hashes.each do |task|
+    Task.create!(task)
   end
-  flunk "Unimplemented"
 end
 
 Then /^I should be on the page with the title: "([^"]*)"$/ do |title|

@@ -6,12 +6,12 @@ Feature: CRUD on tasks
 Background: tasks have been added to database
 
   Given the following tasks exist:
-  | title                   | progress | people |
-  | bathroom                 | 0      | Brian, Albert  |
-  | couch          | 1      | Jonathan, Daniel  |
-  | living room   | 2      | Bryan, Steven |
+  | title                   | progress | people | notes |
+  | bathroom                 | 0      | Brian, Albert  | no notes |
+  | couch          | 1      | Jonathan, Daniel  | no notes |
+  | living room   | 2      | Bryan, Steven | no notes |
 
-  And  I am on the Tasks home page
+  And  I am on the home page
 
 Scenario: display the list of tasks
   Then I should see "bathroom"
@@ -21,7 +21,7 @@ Scenario: display the list of tasks
   Then I should see "Bryan"
 
 Scenario: create task
-  When I press "Create Task"
+  When I press "New Task"
   Then I should be on the page with the title: "New Task"
 
 Scenario:  edit task
