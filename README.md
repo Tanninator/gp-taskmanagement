@@ -10,7 +10,7 @@ GP Task Management App
 Collaborators
 ------------------
 
-+ Albert Luo: cs169-cd
++ Albert Luo: cs169-ce
 + Brian Tan: LOGIN
 + Bryan Mau: cs169-ae
 + Daniel Wu: cs169-ak
