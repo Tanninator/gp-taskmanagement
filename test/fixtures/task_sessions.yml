@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  progress: 1
+  admin: MyString
+
+two:
+  title: MyString
+  progress: 1
+  admin: MyString

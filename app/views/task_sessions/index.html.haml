@@ -1,0 +1,23 @@
+%h1 Listing task_sessions
+
+%table
+  %tr
+    %th Title
+    %th Progress
+    %th Admin
+    %th
+    %th
+    %th
+
+  - @task_sessions.each do |task_session|
+    %tr
+      %td= task_session.title
+      %td= task_session.progress
+      %td= task_session.admin
+      %td= link_to 'Show', task_session
+      %td= link_to 'Edit', edit_task_session_path(task_session)
+      %td= link_to 'Destroy', task_session, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Task session', new_task_session_path

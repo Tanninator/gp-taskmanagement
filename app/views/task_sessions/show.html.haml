@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @task_session.title
+%p
+  %b Progress:
+  = @task_session.progress
+%p
+  %b Admin:
+  = @task_session.admin
+
+= link_to 'Edit', edit_task_session_path(@task_session)
+\|
+= link_to 'Back', task_sessions_path
