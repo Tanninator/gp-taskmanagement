@@ -15,7 +15,7 @@ module NavigationHelpers
 
     when /^the (Tasks )?home\s?page$/ then '/tasks'
     when /^the tasks page$/ then '/tasks'
-
+    when /^the new tasks page$/ then '/tasks/new'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

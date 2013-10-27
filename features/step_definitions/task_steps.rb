@@ -6,6 +6,13 @@ Given /the following tasks exist/ do |tasks_table|
   end
 end
 
-Then /^I should be on the page with the title: "([^"]*)"$/ do |title|
-  page.should have_css('head title', :text => title)
+When /^I edit the task "(.*)"/ do |task_name|
+    visit edit_task_path(Task.find_by title: task_name)
 end
+
+When /^I delete the task "(.*)"/ do |task_name|
+    within (".#{task_name}") do
+        click_link("Destroy")
+    end
+end
+

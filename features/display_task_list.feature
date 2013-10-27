@@ -1,6 +1,6 @@
 Feature: CRUD on tasks
 
-  As an administrator I want to quickly see what tasks are to be done
+  As an administrator I want  the home page quickly see what tasks are to be done
     and to be able to easily create and modify tasks
 
 Background: tasks have been added to database
@@ -21,25 +21,21 @@ Scenario: display the list of tasks
   Then I should see "Bryan"
 
 Scenario: create task
-  When I press "New Task"
-  Then I should be on the page with the title: "New Task"
+  When I follow "New Task"
+  Then I should be on the new tasks page
 
 Scenario:  edit task
-  When I click on "bathroom"
-  Then I should be on the page with the title: "Edit Task"
-  When I fill in "title" with "bathroom2"
-  When I fill in "progress" with "1"
-  When I fill in "people" with "Towel"
-  When I press "Done"
-  Then I should be on the page with the title "Tasks"
+  When I edit the task "bathroom"
+  And I fill in "Title" with "bathroom2"
+  And I fill in "Progress" with "1"
+  And I fill in "Notes" with "Towel"
+  And I press "Save"
+  And I follow "Back"
   Then I should see "bathroom2"
   Then I should see "Towel"
 
 Scenario: delete task
-  When I click on "bathroom"
-  Then I should be on the page with the title: "Edit Task"
-  When I click on "Delete Task"
-  Then I should be on the page with the title "Tasks"
+  When I delete the task "bathroom"
   Then I should not see "bathroom"
   Then I should not see "Brian"
-  Then I should not see Albert"
+  Then I should not see "Albert"
