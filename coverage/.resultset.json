@@ -12,7 +12,7 @@
         null,
         null,
         1,
-        6,
+        8,
         null,
         null,
         null,
@@ -32,22 +32,8 @@
         null,
         null,
         1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
+        null,
         1,
         1,
         2,
@@ -67,17 +53,31 @@
         2,
         1,
         null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        2,
+        1,
+        null,
         null,
         null,
         1,
         null,
         1,
-        4,
+        5,
         null,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null
       ],
@@ -101,6 +101,27 @@
         null
       ]
     },
-    "timestamp": 1382834859
+    "timestamp": 1382852943
+  },
+  "RSpec": {
+    "coverage": {
+      "/home/saasbook/cs169/gp-taskmanagement/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/saasbook/cs169/gp-taskmanagement/app/helpers/tasks_helper.rb": [
+        1,
+        null
+      ],
+      "/home/saasbook/cs169/gp-taskmanagement/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/home/saasbook/cs169/gp-taskmanagement/app/models/task.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1382853002
   }
 }

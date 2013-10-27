@@ -21,8 +21,12 @@ Scenario: display the list of tasks
   Then I should see "Bryan"
 
 Scenario: create task
-  When I follow "New Task"
-  Then I should be on the new tasks page
+  When I create the task with title "clean", progress "1337", people "Robert", notes "good job"
+  And I go to the home page
+  Then I should see "clean"
+  Then I should see "1337"
+  Then I should see "Robert"
+  Then I should see "good job"
 
 Scenario:  edit task
   When I edit the task "bathroom"
