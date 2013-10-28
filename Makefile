@@ -1,5 +1,9 @@
 clean:
 	-@make cleanTempFiles > /dev/null 2> /dev/null
+	-@make cleanCoverage > /dev/null 2> /dev/null
+
+cleanCoverage:
+	-@rm -rf coverage > /dev/null 2> /dev/null
 
 cleanTempFiles:
 	-@rm *~ \#* .DS_Store 2> /dev/null > /dev/null
