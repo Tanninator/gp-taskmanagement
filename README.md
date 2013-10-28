@@ -15,4 +15,4 @@ Collaborators
 + Bryan Mau: cs169-ae
 + Daniel Wu: cs169-ak
 + Jonathan Eng: cs169-af
-+ Steven Hong: LOGIN
++ Steven Hong: cs169-ma
