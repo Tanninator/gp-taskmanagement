@@ -11,10 +11,13 @@
  *= require_self
  *= require_tree .
  */
- html { 
-  background: url(s1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@font-face {
+    font-family: "Yanone Kaffeesatz";
+    src: url("YanoneKaffeesatz-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Nixie One";
+    src: url("NixieOne-Regular.ttf");
+}
+

@@ -1,25 +1,28 @@
-%h1 Listing tasks
+!!!
+%html
+  %head
+  %body
+    .body-wrap
+      = link_to 'Welcome Page', root_path
+      %h1 Tasks
 
-%table
-  %tr
-    %th Title
-    %th Progress
-    %th People
-    %th Notes
-    %th
-    %th
-    %th
+      %table
+        %tr
+          %th Title
+          %th Progress
+          %th People
+          %th Notes
 
-  - @tasks.each do |task|
-    %tr{:class => task.title,}
-      %td= task.title
-      %td= task.progress
-      %td= task.people
-      %td= task.notes
-      %td= link_to 'Show', task
-      %td= link_to 'Edit', edit_task_path(task)
-      %td= link_to 'Destroy', task, :method => :delete
+    - @tasks.each do |task|
+      %tr{:class => task.title,}
+        %td= task.title
+        %td= task.progress
+        %td= task.people
+        %td= task.notes
+        %td= link_to 'Show', task
+        %td= link_to 'Edit', edit_task_path(task)
+        %td= link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%br
+    %br
+    = link_to 'New Task', new_task_path
 
-= link_to 'New Task', new_task_path
