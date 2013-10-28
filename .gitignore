@@ -20,5 +20,6 @@ coverage/*
 
 # Ignore temp files
 *~
+.*~
 \#*
 .DS_Store
