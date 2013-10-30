@@ -4,6 +4,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :title
       t.integer :progress
       t.string :people
+      t.string :task_location
       t.string :notes
 
       t.timestamps

@@ -4,6 +4,7 @@ class CreateTaskSessions < ActiveRecord::Migration
       t.string :title
       t.integer :progress
       t.string :admin
+      t.string :location
 
       t.timestamps
     end

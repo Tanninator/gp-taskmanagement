@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20131028182956) do
     t.string   "title"
     t.integer  "progress"
     t.string   "admin"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(version: 20131028182956) do
     t.string   "title"
     t.integer  "progress"
     t.string   "people"
+    t.string   "task_location"
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
