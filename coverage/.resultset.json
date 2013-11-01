@@ -1,0 +1,147 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/task_sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/tasks_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/models/task_session.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/models/task.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1383337825
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/home/danielwu/Dropbox/work/taskmanagement/app/models/task.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/models/task_session.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/controllers/tasks_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        2,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        2,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/task_sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/tasks_helper.rb": [
+        1,
+        null
+      ],
+      "/home/danielwu/Dropbox/work/taskmanagement/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1383337804
+  }
+}
