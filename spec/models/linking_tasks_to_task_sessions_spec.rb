@@ -46,4 +46,25 @@ describe TaskSession do
     @session.tasks.destroy(@task_1)
     @session.tasks.size.should == 1
   end
+  it 'fails on sad path: accessing single Task from TaskSession, assuming one-to-one relationship' do
+    begin
+      @session.task
+      fail
+    rescue NoMethodError
+    end
+  end
+  it 'fails on sad path: adding more than 1 TaskSession to a Task' do
+    begin
+      @task.task_session << @session
+      fail
+    rescue NoMethodError
+    end
+  end
+  it 'fails on sad path: accessing more than 1 TaskSession from a Task' do
+    begin
+      @task.task_sessions
+      fail
+    rescue NoMethodError
+    end
+  end
 end
