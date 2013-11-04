@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  include ControllerTemplate
+  ControllerTemplate.set_model "Task"
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   # GET /tasks
@@ -21,22 +23,6 @@ class TasksController < ApplicationController
   def edit
   end
 
-  # POST /tasks
-  # POST /tasks.json
-  def create
-    @task = Task.new(task_params)
-
-    respond_to do |format|
-      if @task.save
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @task }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @task.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
   # PATCH/PUT /tasks/1
   # PATCH/PUT /tasks/1.json
   def update
@@ -48,16 +34,6 @@ class TasksController < ApplicationController
         format.html { render action: 'edit' }
         format.json { render json: @task.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /tasks/1
-  # DELETE /tasks/1.json
-  def destroy
-    @task.destroy
-    respond_to do |format|
-      format.html { redirect_to tasks_url }
-      format.json { head :no_content }
     end
   end
 

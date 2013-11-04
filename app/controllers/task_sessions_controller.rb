@@ -1,4 +1,6 @@
-class TaskSessionsController < ApplicationController
+class TaskSessionsController < ResourceController
+  include ControllerTemplate
+  ControllerTemplate.set_model "TaskSession"
   before_action :set_task_session, only: [:show, :edit, :update, :destroy]
 
   # GET /task_sessions
@@ -21,22 +23,6 @@ class TaskSessionsController < ApplicationController
   def edit
   end
 
-  # POST /task_sessions
-  # POST /task_sessions.json
-  def create
-    @task_session = TaskSession.new(task_session_params)
-
-    respond_to do |format|
-      if @task_session.save
-        format.html { redirect_to @task_session, notice: 'Task session was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @task_session }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @task_session.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
   # PATCH/PUT /task_sessions/1
   # PATCH/PUT /task_sessions/1.json
   def update
@@ -48,16 +34,6 @@ class TaskSessionsController < ApplicationController
         format.html { render action: 'edit' }
         format.json { render json: @task_session.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /task_sessions/1
-  # DELETE /task_sessions/1.json
-  def destroy
-    @task_session.destroy
-    respond_to do |format|
-      format.html { redirect_to task_sessions_url }
-      format.json { head :no_content }
     end
   end
 

@@ -1,5 +1,8 @@
 clean:
 	-@make cleanTempFiles > /dev/null 2> /dev/null
+
+deepClean:
+	-@make cleanTempFiles > /dev/null 2> /dev/null
 	-@make cleanCoverage > /dev/null 2> /dev/null
 
 cleanCoverage:
